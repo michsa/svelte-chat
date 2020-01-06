@@ -5,10 +5,7 @@ console.log('port from app', port)
 
 const app = new App({
   target: document.body,
-  props: {
-		name: 'world',
-		port
-	},
+  props: { port }
 })
 
 window.app = app
