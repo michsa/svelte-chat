@@ -7,7 +7,8 @@
 	// state
 	// -----
 
-	let user = prompt('Please enter your name') || 'anonymous'
+	let user = localStorage.getItem('user') || ''
+	$: localStorage.setItem('user', user)
   let socket = io(`http://localhost:${port}`)
   let messages = []
 	let message = ''
