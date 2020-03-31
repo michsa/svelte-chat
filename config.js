@@ -1,1 +1,1 @@
-exports.port = 5530
+exports.port = 1337
